@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://unpkg.com/es6-promise@3.0.2/dist/es6-promise.js"></script>
+		<script src="https://unpkg.com/traceur@0.0.111/bin/traceur.js"></script>
+		<script src="https://unpkg.com/systemjs@0.19.37/dist/system.src.js"></script>
+		<script>
+			Promise.all([
+					System.import('./es6module.js'),
+					System.import('./es5module.js')
+				]).then(function (modules) {
+							var moduleNames = modules.map(function (m) { return m.name; }).join(', ');
+							console.log('The following modules are loaded: ' + moduleNames);
+						});
+		</script>
+	</head>
+	<body></body>
+</html>
