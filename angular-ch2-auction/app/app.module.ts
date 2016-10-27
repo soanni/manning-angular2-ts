@@ -1,4 +1,5 @@
 import { BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 import ApplicationComponent from './components/application/application';
 import CarouselComponent from './components/carousel/carousel';
 import FooterComponent from './components/footer/footer';
