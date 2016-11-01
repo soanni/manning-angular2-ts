@@ -3,7 +3,8 @@ import {Injectable} from "@angular/core";
 
 @Injectable()
 export class LoginGuard implements CanActivate{
-	canActivate(){
+	canActivate(destination: ActivatedRouteSnapshot, state: RouterStateSnapshot){
+		console.log(destination.component.name);
 		return this.checkIfLoggedIn();
 	}
 
