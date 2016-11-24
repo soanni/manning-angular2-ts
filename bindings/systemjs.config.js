@@ -16,7 +16,8 @@ System.config({
 		'@angular/*': {'format': 'cjs'}
 	},
 	packages: {
-		'app' : {main: 'observable-events-http', defaultExtension: 'ts'},
+		//'app' : {main: 'observable-events-http', defaultExtension: 'ts'},
+		'app' : {main: 'pipe-tester', defaultExtension: 'ts'},
 		'rxjs' : {main: 'Rx'},
 		'@angular/core' : {main: 'core.umd.min.js'},
 		'@angular/common' : {main: 'common.umd.min.js'},
