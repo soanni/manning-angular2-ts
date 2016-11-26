@@ -7,9 +7,8 @@ import { TemperaturePipe } from './temperature-pipe';
 
 @Component({
     selector: 'app',
-    pipes: [ TemperaturePipe ],
-    template: `<input type="text" value="0"
-                placeholder="Enter temperature" [(ngModel)]="temp">
+    //pipes: [ TemperaturePipe ],
+    template: `<input type="text" value="0" placeholder="Enter temperature" [(ngModel)]="temp">
                 <button (click)="toggleFormat()">Toggle Format</button>
                 <br>In {{targetFormat}} this temperature is {{temp | temperature: format | number:'1.1-2'}}`
 })
@@ -28,7 +27,7 @@ class AppComponent{
 
 @NgModule({
     imports: [ BrowserModule, FormsModule ],
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent, TemperaturePipe ],
     bootstrap: [ AppComponent ]
 })
 class AppModule{}
