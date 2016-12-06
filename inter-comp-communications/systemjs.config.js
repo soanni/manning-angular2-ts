@@ -13,7 +13,10 @@ System.config({
 		'node_modules/@angular/*': 'node_modules/@angular/*/bundles'
 	},
 	meta: {
-		'@angular/*': {'format': 'cjs'}
+		'@angular/*': {'format': 'cjs'},
+		'app/mediator/stock.ts': {
+			format: 'es6'
+		}
 	},
 	packages: {
 		'app' : {main: 'output-property-binding', defaultExtension: 'ts'},
