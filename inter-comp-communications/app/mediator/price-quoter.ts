@@ -1,14 +1,9 @@
 import { Component, Output, Directive, EventEmitter } from '@angular/core';
 import { Stock } from './stock';
 
-interface IPriceQuote{
-  stockSymbol: string;
-  lastPrice: number;
-}
-
 @Component({
   selector: 'price-quoter',
-  template: `<strong><input type="button" value="Buy" (click)="buyStocks($event)">{{stockSymbol}} \${{lastPrice | currency:'USD':true:'1.2-2'}}</strong>`,
+  template: `<strong><input type="button" value="Buy" (click)="buyStocks($event)">{{stockSymbol}} {{lastPrice | currency:'USD':true:'1.2-2'}}</strong>`,
   styles: [`:host {background: pink; padding: 5px 15px 15px 15px;}`]
 })
 export class PriceQuoterComponent{

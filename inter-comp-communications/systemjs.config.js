@@ -19,7 +19,7 @@ System.config({
 		}
 	},
 	packages: {
-		'app' : {main: 'output-property-binding', defaultExtension: 'ts'},
+		'app' : {main: 'mediator/mediator', defaultExtension: 'ts'},
 		//'app' : {main: 'pipe-tester', defaultExtension: 'ts'},
 		'rxjs' : {main: 'Rx'},
 		'@angular/core' : {main: 'core.umd.min.js'},
