@@ -19,7 +19,7 @@ System.config({
 		}
 	},
 	packages: {
-		'app' : {main: 'mediator/mediator', defaultExtension: 'ts'},
+		'app' : {main: 'ng-onchanges-with-param', defaultExtension: 'ts'},
 		//'app' : {main: 'pipe-tester', defaultExtension: 'ts'},
 		'rxjs' : {main: 'Rx'},
 		'@angular/core' : {main: 'core.umd.min.js'},
